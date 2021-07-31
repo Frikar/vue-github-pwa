@@ -1,15 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div>
+    <h1>Github App</h1>
+    <GithubToken></GithubToken>
+    <User></User>
+    <Repos></Repos>
+  </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import GithubToken from "./components/GithubToken";
+import User from "@/components/User";
+import Repos from "@/components/Repos";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    Repos,
+    User,
+    GithubToken
   },
 };
 </script>
